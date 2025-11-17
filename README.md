@@ -6,7 +6,7 @@ This system implements **Hybrid Application Tracking** with **Applicant**, **Adm
 
 ---
 
-## 📌 Overview (Matches the PDF)
+## 📌 Overview 
 
 **TrackIt** is an Application Tracking System where:
 
@@ -25,18 +25,18 @@ This system implements **Hybrid Application Tracking** with **Applicant**, **Adm
 
 ---
 
-## 🛠 Tech Stack (as per PDF)
+## 🛠 Tech Stack 
 
 - ✅ **.NET Core / ASP.NET Core Web API**
 - ✅ **Entity Framework Core**
 - ✅ **SQL Server**
 - ✅ **JWT Authentication**
-- ✅ **Swagger UI** (used as the "View" in MVC per PDF)
+- ✅ **Swagger UI** 
 - ✅ **Clean & Modular Code Structure**
 
 ---
 
-## 📁 Project Structure (As Required by PDF)
+## 📁 Project Structure 
 
 ```
 TrackIt-ApplicationTracker/
@@ -46,7 +46,7 @@ TrackIt-ApplicationTracker/
 │   ├── ApplicantController.cs
 │   ├── AdminController.cs
 │   ├── BotController.cs
-│   └── DashboardController.cs      # Dashboard Insights (PDF Requirement)
+│   └── DashboardController.cs      # Dashboard Insights
 │
 ├── Models/
 ├── DTOs/
@@ -59,7 +59,7 @@ TrackIt-ApplicationTracker/
 
 ---
 
-## 🔐 Role-Based Authentication (PDF Requirement)
+## 🔐 Role-Based Authentication 
 
 The system uses **JWT authentication** with three roles:
 
@@ -71,7 +71,7 @@ Each role has access only to its allowed endpoints.
 
 ---
 
-## 📡 API Endpoints (Exactly as Required in PDF)
+## 📡 API Endpoints 
 
 ### 🔐 Auth
 
@@ -84,8 +84,6 @@ Each role has access only to its allowed endpoints.
 
 ### 👤 Applicant Endpoints
 
-> **From PDF** → *Applicant – Can create and track own applications*
-
 | Method | Route | Description |
 |--------|-------|-------------|
 | `POST` | `/applicant/apply` | Create new application |
@@ -93,7 +91,7 @@ Each role has access only to its allowed endpoints.
 | `GET` | `/applicant/application/{id}` | View a specific application |
 | `GET` | `/applicant/application/{id}/logs` | View full traceability logs |
 
-#### **Applicant Dashboard (PDF Requirement: Dashboard endpoint for insights)**
+#### **Applicant Dashboard **
 
 | Method | Route | Description |
 |--------|-------|-------------|
@@ -102,8 +100,6 @@ Each role has access only to its allowed endpoints.
 ---
 
 ### 🛠 Admin Endpoints
-
-> **From PDF** → *Admin creates job roles, manages non-technical applications*
 
 | Method | Route | Description |
 |--------|-------|-------------|
@@ -128,8 +124,6 @@ Admin cannot update TECHNICAL applications. Bot will handle these.
 
 ### 🤖 Bot Mimic Endpoints
 
-> **From PDF** → *Bot Mimic simulates automated tracking for technical roles*
-
 | Method | Route | Description |
 |--------|-------|-------------|
 | `POST` | `/bot/run` | Automatically updates technical role applications |
@@ -152,7 +146,7 @@ Applied → Reviewed → Interview → Offer → Hired
 
 ---
 
-## 📝 Full Traceability (PDF Requirement)
+## 📝 Full Traceability 
 
 Every application update — **Admin** or **Bot** — creates a log entry with:
 
@@ -208,7 +202,7 @@ http://localhost:5010/swagger
 
 ---
 
-## 🔑 Sample Accounts for Testing (PDF Requirement)
+## 🔑 Sample Accounts for Testing 
 
 Use these during submission:
 
@@ -221,7 +215,7 @@ Use these during submission:
 
 ---
 
-## 🧪 Testing Workflow (Matches PDF)
+## 🧪 Testing Workflow 
 
 ### 1. Register 3 users
 - Admin / Applicant / Bot Mimic
@@ -246,7 +240,7 @@ Use these during submission:
 
 ---
 
-## 📊 Dashboard Endpoints (PDF Requirement)
+## 📊 Dashboard Endpoints 
 
 ### **Applicant Dashboard** - `GET /applicant/dashboard`
 ```json
