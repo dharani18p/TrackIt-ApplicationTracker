@@ -1,4 +1,5 @@
 # 🚀 TrackIt – Hybrid Application Tracking System
+Live Demo: https://trackitappdh9970013051.azurewebsites.net/swagger/index.html
 
 **A .NET Core 8 Web API built as part of the Junior Backend Engineer (.NET) – PoC assignment for 6S Consulting.**
 
