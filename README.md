@@ -212,11 +212,12 @@ http://localhost:5010/swagger
 
 Use these during submission:
 
-| Role | Username | Password |
-|------|----------|----------|
-| **Admin** | admin1 | Admin@123 |
-| **Applicant** | applicant1 | User@123 |
-| **Bot Mimic** | bot1 | Bot@123 |
+| Role          | Username          | Password       |
+|---------------|--------------------|----------------|
+| **Admin**     | main_admin         | Admin@123      |
+| **Applicant** | applicant_dharani  | Applicant@123  |
+| **Bot Mimic** | bot_mimic_1        | Bot@123        |
+
 
 ---
 
